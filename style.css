@@ -6,16 +6,16 @@ body {
 }
 
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 li, h3 {
-  list-style:none;
+  list-style: none;
 }
 
 input,button{
-  outline:none;
+  outline: none;
 }
 
 .matrix {
@@ -34,8 +34,10 @@ input,button{
 }
 
 @media (max-width:768px) {
+
   .aaa { text-align: center;
   }
+
 }
 
 .task-list {
@@ -98,14 +100,13 @@ input,button{
 
 /* Task list */
 .task__item {
-  overflow: hidden;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 	vertical-align: middle;
+	overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .checkbox {
@@ -137,14 +138,14 @@ input,button{
 
 /* Edit Task */
 .task__item .task {
-  display:none
+  display: none
 }
 
 .task__item.edit-mode .task {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .task__item.edit-mode .task__label {
-  display:none;
+  display: none;
 }
