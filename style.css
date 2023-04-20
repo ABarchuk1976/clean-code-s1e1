@@ -48,7 +48,7 @@ input,button{
 
 .task {
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
   width: 56%;
 	margin: 0;
   font-size: 18px;
@@ -132,18 +132,18 @@ input,button{
 
 /* Completed */
 .task-completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task__item .task {
-  display: none
+  display: none;
 }
 
 .task__item.edit-mode .task {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .task__item.edit-mode .task__label {
