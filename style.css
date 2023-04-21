@@ -11,8 +11,10 @@ ul {
 }
 
 li,
-h3 {
+h1,
+h2 {
   list-style: none;
+	margin: 0;
 }
 
 input,
@@ -20,11 +22,25 @@ button{
   outline: none;
 }
 
-.matrix {
-  width: 500px;
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
   margin: 0 auto;
-  display: block;
+}
+
+.container {
+	width: 500px;
+	text-align: left;
+}
+
+.container__matrix {
   text-align: right;
+}
+
+.matrix__title {
+	height: 0;
+	visibility: hidden;
 }
 
 .matrix__img {
@@ -37,7 +53,8 @@ button{
 
 @media (max-width:768px) {
 
-  .matrix { text-align: center;
+  .container__matrix { 
+    text-align: center;
   }
 
 }
@@ -45,7 +62,7 @@ button{
 .task-list {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
 .task__wrapper {
@@ -111,11 +128,6 @@ button{
   text-transform: uppercase;
 }
 
-.task__title--new {
-	display: block;
-  margin: 0 0 20px;
-}
-
 .task__item {
   display: flex;
   justify-content: space-between;
@@ -136,6 +148,10 @@ button{
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
+}
+
+.task__label--invisible {
+	display: none;
 }
 
 .task__set--completed .task__label {
