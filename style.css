@@ -14,24 +14,24 @@ li,
 h1,
 h2 {
   list-style: none;
-	margin: 0;
+  margin: 0;
 }
 
 input,
-button{
+button {
   outline: none;
 }
 
 .section {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
 }
 
 .container {
-	width: 500px;
-	text-align: left;
+  width: 500px;
+  text-align: left;
 }
 
 .container__matrix {
@@ -39,8 +39,8 @@ button{
 }
 
 .matrix__title {
-	height: 0;
-	visibility: hidden;
+  height: 0;
+  visibility: hidden;
 }
 
 .matrix__img {
@@ -51,12 +51,10 @@ button{
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-
-  .container__matrix { 
+@media (max-width: 768px) {
+  .container__matrix {
     text-align: center;
   }
-
 }
 
 .task-list {
@@ -73,7 +71,7 @@ button{
   display: inline-block;
   flex-grow: 1;
   width: 56%;
-	margin: 0;
+  margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -86,7 +84,7 @@ button{
 }
 
 .task__input:focus {
-	color: #333;
+  color: #333;
 }
 
 .task__input--new {
@@ -118,7 +116,7 @@ button{
 }
 
 .task__title {
-	display: block;
+  display: block;
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -132,8 +130,8 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-	vertical-align: middle;
-	overflow: hidden;
+  vertical-align: middle;
+  overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
 }
@@ -143,7 +141,7 @@ button{
 }
 
 .task__label {
-	flex-grow: 1;
+  flex-grow: 1;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -151,7 +149,7 @@ button{
 }
 
 .task__label--invisible {
-	display: none;
+  display: none;
 }
 
 .task__set--completed .task__label {
